@@ -50,30 +50,10 @@ StoreSalesForecast/
 ├── ML_01_SALES_FORECAST.ipynb     # Main notebook
 ├── data/
 │   ├── train.csv
-│   ├── test.csv
+│   ├── test.csv          #DOWNLOAD FROM LINK
 │   ├── stores.csv
 │   └── holidays_events.csv
-├── requirements.txt
 └── README.md
-```
-
----
-
-## 🚀 How to Run
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/your-username/StoreSalesForecast.git
-cd StoreSalesForecast
-
-# 2. Download dataset from Kaggle and place CSVs in /data
-# https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data
-
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Launch notebook
-jupyter notebook ML_01_SALES_FORECAST.ipynb
 ```
 
 ---
@@ -105,16 +85,6 @@ jupyter notebook ML_01_SALES_FORECAST.ipynb
 - Periodogram analysis is essential to identify dominant seasonal cycles before building Fourier features
 - Holiday dummies for national events provide meaningful signal on residual errors
 - `DeterministicProcess` cleanly separates trend from seasonality for linear models
-
----
-
-## 📈 Suggested Improvements
-
-- [ ] Add lag features (7-day, 14-day, 28-day) for autocorrelation signal
-- [ ] Integrate oil price data as an external regressor
-- [ ] Upgrade to a `BoostedHybrid` model (Linear trend + XGBoost residuals)
-- [ ] Add payday flags (15th and last day of month for Ecuadorian payroll cycles)
-- [ ] Evaluate with RMSLE metric to match competition scoring
 
 ---
 
